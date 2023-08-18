@@ -21,14 +21,7 @@
         <module>webinar3</module>
         <module>homework002</module>
         <module>common</module>
+        <module>homework003</module>
     </modules>
-
-    <dependencies>
-        <dependency>
-            <groupId>ru.aberezhnoy</groupId>
-            <artifactId>common</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
 
 </project>

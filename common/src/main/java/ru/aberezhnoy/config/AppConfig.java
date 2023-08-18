@@ -11,12 +11,12 @@ public class AppConfig {
     private final String BOT_TOKEN;
     private static AppConfig instance;
 
-    public AppConfig(String filename) {
+    private AppConfig(String filename) {
         Properties properties = initializeProperties(filename);
         this.API_KEY = properties.getProperty("api_key");
         this.URL = properties.getProperty("url");
-        this.BOT_NAME = initializeProperties(filename).getProperty("bot_name");
-        this.BOT_TOKEN = initializeProperties(filename).getProperty("bot_token");
+        this.BOT_NAME = properties.getProperty("bot_name");
+        this.BOT_TOKEN = properties.getProperty("bot_token");
     }
 
     public static AppConfig getInstance(String filename) {
