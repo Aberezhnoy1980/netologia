@@ -6,7 +6,7 @@ import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
-import ru.aberezhnoy.config.Factory;
+import ru.aberezhnoy.config.ConfigFactory;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -18,7 +18,7 @@ public class GetImageOfTheDayFromNasa {
                 .setDefaultRequestConfig(RequestConfig.DEFAULT)
                 .build();
 
-        HttpGet request = new HttpGet(Factory.getAppConfig("/application.properties").getURL());
+        HttpGet request = new HttpGet(ConfigFactory.getAppConfig("/application.properties").getURL());
 
         ObjectMapper mapper = new ObjectMapper();
 

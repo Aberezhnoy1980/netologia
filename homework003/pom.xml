@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>homework002</artifactId>
+    <artifactId>homework003</artifactId>
 
     <dependencies>
         <dependency>
@@ -24,11 +24,17 @@
             <version>4.5.13</version>
         </dependency>
 
-            <dependency>
-                <groupId>ru.aberezhnoy</groupId>
-                <artifactId>common</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
+        <dependency>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambots</artifactId>
+            <version>6.7.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ru.aberezhnoy</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 </project>
